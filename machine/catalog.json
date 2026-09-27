@@ -1,0 +1,161 @@
+{
+  "currency": "USD",
+  "honesty": "全部为内测价（beta），首批真实订单后复核调价；采购成本由买家直接付供应商，vertciti 不经手、不加价；交付周期为内测目标非承诺。",
+  "order_method": {
+    "note": "当前无在线支付（no online checkout yet）",
+    "steps": [
+      "复制下单模板并注明包编号",
+      "邮件发送需求",
+      "vertciti 书面确认范围与档期",
+      "按指引付款后启动"
+    ]
+  },
+  "phase": "human_selected",
+  "products": [
+    {
+      "deliverables": [
+        "规格确认书",
+        "≥3 家比价表",
+        "样本核验",
+        "采购推荐方案"
+      ],
+      "exclusions": [
+        "不碰特殊授权、隐私数据与绕反爬采集"
+      ],
+      "id": "SP-01",
+      "name_en": "Data Procurement Pack",
+      "name_zh": "数据采购包",
+      "pitch_en": "Turn 'afraid of buying the wrong data' into an acceptance-checkable deliverable list.",
+      "pitch_zh": "把\"买数据怕买错\"变成可验收的交付清单。",
+      "price": {
+        "note": "服务费；数据费买家直接付供应商",
+        "service_fee": 109,
+        "type": "beta",
+        "price_cny": 800,
+        "price_usd": 109,
+        "currency_default": "geo"
+      },
+      "third_party_cost": "数据费买家直接付供应商"
+    },
+    {
+      "deliverables": [
+        "3 家候选对比表",
+        "沙箱试用记录",
+        "接入建议文档"
+      ],
+      "exclusions": [
+        "不做定制 SDK 开发与上线后运维"
+      ],
+      "id": "SP-02",
+      "name_en": "API Integration Pack",
+      "name_zh": "API 集成包",
+      "pitch_en": "No need to trial APIs one by one: candidate comparison plus sandbox testing, one clear answer on which to pick and how to integrate.",
+      "pitch_zh": "不用逐家试 API：候选对比＋沙箱实测，一次讲清选哪家、怎么接。",
+      "price": {
+        "note": "服务费；API 订阅费买家自付",
+        "service_fee": 169,
+        "type": "beta",
+        "price_cny": 1200,
+        "price_usd": 169,
+        "currency_default": "geo"
+      },
+      "third_party_cost": "API 订阅费买家直接付厂商"
+    },
+    {
+      "deliverables": [
+        "工作负载约束清单",
+        "≥3 家计费对比",
+        "统一基准测试记录"
+      ],
+      "exclusions": [
+        "只交付方案，不动手实施集群搭建"
+      ],
+      "id": "SP-03",
+      "name_en": "Compute Procurement Pack",
+      "name_zh": "算力采购包",
+      "pitch_en": "How to buy GPUs without pitfalls: constraint checklist, multi-vendor price comparison, benchmark records — order directly with the plan in hand.",
+      "pitch_zh": "GPU 怎么买不踩坑：约束清单＋多家比价＋基准实测，拿着方案直接下单。",
+      "price": {
+        "note": "服务费；算力费买家直接付云厂商。本包为方案包（plan pack），v1 不售算力额度",
+        "service_fee": 199,
+        "type": "beta",
+        "price_cny": 1500,
+        "price_usd": 199,
+        "currency_default": "geo"
+      },
+      "third_party_cost": "算力费买家直接付云厂商"
+    },
+    {
+      "deliverables": [
+        "成功标准说明",
+        "3 个方案实测对比",
+        "选型建议书"
+      ],
+      "exclusions": [
+        "不做模型微调、训练与私有化部署"
+      ],
+      "id": "SP-04",
+      "name_en": "AI Capability Advisory Pack",
+      "name_zh": "AI 能力选型咨询包",
+      "pitch_en": "Which model or agent to pick: tested against your sample tasks, with a recommendation, alternatives, and a fallback path.",
+      "pitch_zh": "模型 / 智能体选哪个：按你的样例任务实测，给出推荐＋备选＋回退路径。",
+      "price": {
+        "note": "纯咨询，无第三方费用",
+        "service_fee": 125,
+        "type": "beta",
+        "price_cny": 900,
+        "price_usd": 125,
+        "currency_default": "geo"
+      },
+      "third_party_cost": "无"
+    },
+    {
+      "deliverables": [
+        "PDF 比价报告",
+        "选购建议",
+        "数据来源清单"
+      ],
+      "exclusions": [
+        "不做定向询价与谈判；报告不构成采购承诺"
+      ],
+      "id": "SP-05",
+      "name_en": "Vendor Benchmark Report",
+      "name_zh": "供应商比价报告包",
+      "pitch_en": "Read this report before you buy: side-by-side comparison of ≥5 vendors in one category, sources traceable.",
+      "pitch_zh": "买之前先看这份报告：一个品类 ≥5 家供应商横向对比，来源可查。",
+      "price": {
+        "note": "纯报告，无第三方费用；定价依据最弱，已标待核实",
+        "service_fee": 69,
+        "type": "beta",
+        "price_cny": 500,
+        "price_usd": 69,
+        "currency_default": "geo"
+      },
+      "third_party_cost": "无"
+    },
+    {
+      "deliverables": [
+        "1 个迷你需求的 3 家对比",
+        "1 页结论"
+      ],
+      "exclusions": [
+        "只做公开信息可完成的需求，不含修订与后续执行"
+      ],
+      "id": "SP-06",
+      "name_en": "First-Order Trial Pack",
+      "name_zh": "首单体验包",
+      "pitch_en": "For the price of a coffee, experience one full vertciti delivery: target 2 days to a comparison conclusion.",
+      "pitch_zh": "花一杯咖啡的钱，完整体验一次 vertciti 交付：目标 2 天出对比结论。",
+      "price": {
+        "note": "30 天内购买标准包可全额抵扣",
+        "service_fee": 29,
+        "type": "beta",
+        "price_cny": 199,
+        "price_usd": 29,
+        "currency_default": "geo"
+      },
+      "third_party_cost": "无"
+    }
+  ],
+  "updated": "2026-09-25"
+}
