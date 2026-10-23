@@ -20,7 +20,7 @@ SP-07 生产页的构建脚本与当时的机器可读商品数据，仅供 vert
 付款链接注入），输出 `--dst-dir/index.html`。`rep()` 要求每个锚点**恰好出现 1 次**，否则 `ASSERT FAIL`
 直接退出，不静默产出半成品。
 
-架构图、演示 GIF 与截图在 [`docs/assets/`](docs/assets/)（私有仓，需有仓库权限才能查看）。
+架构图、演示 GIF 与截图在 [`docs/assets/`](docs/assets/)。
 
 ## 快速开始
 
