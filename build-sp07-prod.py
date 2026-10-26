@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Build the SP-07 production index.html from the D111-safe base.
+"""Build the SP-07 production index.html from the security-reviewed base.
 Applies: v1.1 logo syntax normalization + 6 SP-07 edits. Fails loudly if any
 anchor is not found exactly once.
 """
 import argparse
 import re, sys
 
-ap = argparse.ArgumentParser(description="Build SP-07 production index.html from the D111-safe base.")
+ap = argparse.ArgumentParser(description="Build SP-07 production index.html from the security-reviewed base.")
 ap.add_argument("--src", default="/tmp/prod_vc.html", help="input base HTML (default: /tmp/prod_vc.html)")
-ap.add_argument("--dst-dir", default="/home/hatch/workspace/vertcity/deploy-vertciti-prod/src",
-                help="output directory for index.html")
+ap.add_argument("--dst-dir", required=True,
+                help="output directory for index.html (required)")
 args = ap.parse_args()
 
 SRC = args.src
@@ -61,7 +61,7 @@ rep(
     "delivery-map",
 )
 
-# ---- 5. phone card: deposit terms in description, badge UNCHANGED (D111), trial link ----
+# ---- 5. phone card: deposit terms in description, badge UNCHANGED, trial link ----
 rep(
     "d:zh?'来电自动接听、智能预约、转人工；首批面向美国本地服务企业验证中。':"
     "'Automatic call answering, smart scheduling, and human handoff; "
