@@ -8,8 +8,8 @@ import re, sys
 
 ap = argparse.ArgumentParser(description="Build SP-07 production index.html from the D111-safe base.")
 ap.add_argument("--src", default="/tmp/prod_vc.html", help="input base HTML (default: /tmp/prod_vc.html)")
-ap.add_argument("--dst-dir", default="/home/hatch/workspace/vertcity/deploy-vertciti-prod/src",
-                help="output directory for index.html")
+ap.add_argument("--dst-dir", required=True,
+                help="output directory for index.html (required)")
 args = ap.parse_args()
 
 SRC = args.src
